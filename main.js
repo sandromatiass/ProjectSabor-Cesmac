@@ -42,9 +42,8 @@ form.addEventListener('submit', function(event) {
 
   if (isValid) {
     alert(`Olá, ${name}! Todos os campos foram preenchidos corretamente.`);
+    form.reset();
   };
-
-  form.reset();
 });
 
 document.getElementById("clearForm").addEventListener('click', function(){
