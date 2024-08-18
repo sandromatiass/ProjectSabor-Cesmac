@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Sabor</title>
+</head>
+<body>
+  <header>
+    <h1>Sabor</h1>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Formulário de envio</h2>
+      <form class="myForm">
+        <input type="text" name="name" id="name" placeholder="Digite seu nome">
+        <span class="error-message" id="name-error"></span>
+
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" >
+        <span class="error-message" id="email-error"></span>
+
+        <input type="date" name="date" id="date">
+        <span class="error-message" id="date-error"></span>
+
+        <textarea name="description" id="description" placeholder="Digite sua preferência alimentar" ></textarea>
+        <span class="error-message" id="description-error"></span>
+
+        <div class="buttons">
+          <button type="submit" class="buttonGreen" >Salvar</button>
+          <button type="button" class="buttonRed" id="clearForm">Limpar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
